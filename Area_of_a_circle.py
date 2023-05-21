@@ -1,4 +1,4 @@
-r=int(input())
-pi=3.14
-Area=pi*r*r
-print("{0:.2f}".format(Area))
+PI=3.14
+r=float(input())
+area=PI*r*r
+print("%0.2f"%area)
