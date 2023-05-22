@@ -1,7 +1,8 @@
+
 x=int(input())
 for i in range(0,x):
     n,a,b,k=map(int,input().split())
-    l=0
+    L=0
     if(a%b==0):
         l=a
     elif(b%a==0):
