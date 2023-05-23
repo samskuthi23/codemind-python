@@ -1,15 +1,16 @@
-def isprime(a):
-    if a<2:
-        return False
-    b=int(a**0.5)
-    for d in range(2,b+1):
-        if a%d==0:
-            return False
-    return True
+def prime(n):
+    if(n==1):
+        return 0
+    else:
+        for i in range(2,int(n**0.5)+1):
+            if n%i==0:
+                return 0
+                break
+    return 1
 a=int(input())
 b=int(input())
-count=0
+c=0
 for i in range(a,b+1):
-    if isprime(i):
-        count+=1
-print(count)
+    if(prime(i)==1):
+        c+=1
+print(c)
